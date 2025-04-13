@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+/* Enable dark mode using class strategy */
+@custom-variant dark (&:where(.dark, .dark *));
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+#__next {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
